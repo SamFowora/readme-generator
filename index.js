@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-const { error } = require("console");
+const { error, Console } = require("console");
 
 // array of questions for user
 // project title, description, contents (just insert to generatemkd), installation, usage, licensing, contributing, tests, questions
@@ -108,8 +108,7 @@ const questions = () => {
             else {return "They need an email to reach out to you :( "}
         }
     }
-
-])
+]);
 };
 
 // function to write README file
@@ -122,10 +121,13 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
+    inquirer.prompt(questions)
+    .then((data) => {
+        writeToFile(`${data.filename}.md`, generateMarkdown(data))
+    });
+};
 
-}
-
+};
 // function call to initialize program
 init();
 
-};
