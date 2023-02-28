@@ -6,8 +6,7 @@ const { error, Console } = require("console");
 
 // array of questions for user
 // project title, description, contents (just insert to generatemkd), installation, usage, licensing, contributing, tests, questions
-const questions = () => {
-    return inquirer.prompt([
+const questions = [
 
     // project title
     {
@@ -55,10 +54,10 @@ const questions = () => {
     
     // license choice, could use dropdown through inquirer
     {
-        type: 'input',
-        name: 'licensing',
+        type: 'list',
+        name: 'license',
         message: 'Choose project license: ',
-        choices: ["MIT", "Apache 2.0", "GPLv3", "BSD 3-Clause", "Unlicense", "Other (Please manually add into README), N/A"],
+        choices: ["MIT", "Apache 2.0", "GPLv3", "BSD 3-Clause", "Unlicense", "Other (Please manually add into README)", "N/A"],
         validate: (value) => {
             if (value){return true}
             else {return "No license? [insert megamind meme]"}
@@ -108,8 +107,8 @@ const questions = () => {
             else {return "They need an email to reach out to you :( "}
         }
     }
-]);
-};
+];
+
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -118,16 +117,16 @@ function writeToFile(fileName, data) {
     ? console.error(err)
     : console.log("All done, check out your new README!")
 });
+};
 
 // function to initialize program
 function init() {
     inquirer.prompt(questions)
     .then((data) => {
         console.log(data)
-        writeToFile(`${data.filename}.md`, generateMarkdown(data))
+        writeToFile("README.md", generateMarkdown(data))
     });
 };
 
 // function call to initialize program
 init();
-};

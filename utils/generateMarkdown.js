@@ -29,12 +29,12 @@ ${data.description}
 
 
 ## Contents
-- [Installation] (#installation)
-- [Usage] (#usage)
-- [License] (#license)
-- [Credits] (#credits)
-- [Tests] (#tests)
-- [Questions] (#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Credits](#credits)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 ${data.installation}
