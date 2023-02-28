@@ -58,7 +58,7 @@ const questions = () => {
         type: 'input',
         name: 'licensing',
         message: 'Choose project license: ',
-        choices: ["MIT", "Apache", "GPLv3", "BSD 3-Clause", "Unlicense", "Other (Please manually add into README), N/A"],
+        choices: ["MIT", "Apache 2.0", "GPLv3", "BSD 3-Clause", "Unlicense", "Other (Please manually add into README), N/A"],
         validate: (value) => {
             if (value){return true}
             else {return "No license? [insert megamind meme]"}
