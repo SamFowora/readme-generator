@@ -12,7 +12,7 @@ const questions = () => {
     // project title
     {
         type: 'input',
-        name: ['title' + `README.md`],
+        name: 'title',
         message: 'Insert project title: ',
         validate: (value) => {
             if (value){return true}
@@ -127,7 +127,8 @@ function init() {
     });
 };
 
-};
 // function call to initialize program
 init();
 
+
+};
