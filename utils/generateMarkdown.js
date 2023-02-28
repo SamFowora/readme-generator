@@ -52,7 +52,6 @@ ${data.credits}
 ${data.tests}
 
 ## Questions
-${data.questions}
 "Any questions about this application? Feel free to contact us:
 Email: ${data.email}
 

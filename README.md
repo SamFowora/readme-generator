@@ -1,9 +1,9 @@
-# Test
+# It's a secret
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Description
-This is a description
+Why would I tell you? Its a secret
 
 
 ## Contents
@@ -15,25 +15,25 @@ This is a description
 - [Questions](#questions)
 
 ## Installation
-These are steps
+I pinky promised not to tell
 
 ## Usage
-These are instructions
+I'm a man of my word, no spilling the secrets
 
 ## License
 MIT
 
 ## Credits
-These are collaborators
+Okay, just one person...Clark Kent
 
 ## Tests
-Nope
+NOPE, thats all Im saying
 
 ## Questions
 undefined
 "Any questions about this application? Feel free to contact us:
-Email: What's that?
+Email: NoSecrets@gmail.com
 
 ...and check out our GitHub profile:
-GitHub: This isn't a github profile"
+GitHub: NotAGitHubLink@github.com"
 
