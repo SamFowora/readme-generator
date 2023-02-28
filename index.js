@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
+const { error } = require("console");
 
 // array of questions for user
 // project title, description, contents (just insert to generatemkd), installation, usage, licensing, contributing, tests, questions
@@ -85,14 +86,14 @@ const questions = () => {
         }
     },
     
-    // questions, insert github AND email (how??) 
+    // questions 
     {
         type: 'input',
         name: 'GitHub username',
         message: 'Insert GitHub link: ',
         validate: (value)  => {
             if (value){return true}
-            else {return "No commits on your GitHub or something? Where's the link??"}
+            else {return "No commits? [insert megamind meme]"}
         }
     },
 
@@ -112,7 +113,11 @@ const questions = () => {
 
 // function to write README file
 function writeToFile(fileName, data) {
-}
+    fs.writeFile(fileName, data, (err) => {
+    return err
+    ? console.error(err)
+    : console.log("All done, check out your new README!")
+});
 
 // function to initialize program
 function init() {
@@ -121,3 +126,5 @@ function init() {
 
 // function call to initialize program
 init();
+
+};
