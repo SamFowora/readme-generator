@@ -123,12 +123,11 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((data) => {
+        console.log(data)
         writeToFile(`${data.filename}.md`, generateMarkdown(data))
     });
 };
 
 // function call to initialize program
 init();
-
-
 };
