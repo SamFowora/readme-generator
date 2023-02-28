@@ -90,8 +90,8 @@ const questions = () => {
     // questions 
     {
         type: 'input',
-        name: 'GitHub username',
-        message: 'Insert GitHub link: ',
+        name: 'github',
+        message: 'Insert GitHub profile link: ',
         validate: (value)  => {
             if (value){return true}
             else {return "No commits? [insert megamind meme]"}

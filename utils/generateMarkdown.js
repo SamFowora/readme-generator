@@ -28,24 +28,35 @@ ${data.description}
 
 
 ## Contents
-
+- [Installation] (#installation)
+- [Usage] (#usage)
+- [License] (#license)
+- [Credits] (#credits)
+- [Tests] (#tests)
+- [Questions] (#questions)
 
 ## Installation
-
+${data.installation}
 
 ## Usage
-
+${data.usage}
 
 ## License
-
+${data.license}
 
 ## Credits
-
+${data.credits}
 
 ## Tests
-
+${data.tests}
 
 ## Questions
+${data.questions}
+"Any questions about this application? Feel free to contact us:
+Email: ${data.email}
+
+...and check out our GitHub profile:
+GitHub: ${data.github}"
 
 `;
 }
