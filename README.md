@@ -1,4 +1,4 @@
-# professionally-funny-readme-generator
+# Professionally-Funny-Readme-Generator
 
 ## Description
 
